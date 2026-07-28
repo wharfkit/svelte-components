@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/wharfkit/svelte-components/compare/v0.6.1...v1.0.0) (2026-07-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* package renamed from unicove-components. Fonts are no longer bundled into the main stylesheet — import '@wharfkit/svelte-components/fonts.css' to keep the previous typography. Consumers should delete their @source line, which is now self-registered. Typography and font tokens moved to overridable --theme-* custom properties, and focus rings moved from the undefined solar-500 to --role-focus.
+
+### Features
+
+* extract as @wharfkit/svelte-components ([5c5d4e0](https://github.com/wharfkit/svelte-components/commit/5c5d4e0bc7ee1629dfdb7c00a6c1730b74152372))
+
+
+### Bug Fixes
+
+* breaking text on select label ([e0d102d](https://github.com/wharfkit/svelte-components/commit/e0d102d71251dec3a1bbb9e41176b44a72b5ad02))
+* dark mode toggle requiring two clicks and inverting ([a07653a](https://github.com/wharfkit/svelte-components/commit/a07653aad2194a13f6694ed39201369c17a0f4cd))
+* remove size-fit from medium+ breakpoints causing button size to change depending on state ([81bce81](https://github.com/wharfkit/svelte-components/commit/81bce81eec247418a9cefa5ca36a7a45f9287c35))
+
 ## [0.6.1](https://github.com/greymass/unicove-components/compare/v0.6.0...v0.6.1) (2025-11-03)
 
 
