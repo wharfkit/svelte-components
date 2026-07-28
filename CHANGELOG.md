@@ -2,6 +2,51 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/wharfkit/svelte-components/compare/svelte-components-v0.7.0...svelte-components-v0.8.0) (2026-07-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* package renamed from unicove-components. Fonts are no longer bundled into the main stylesheet — import '@wharfkit/svelte-components/fonts.css' to keep the previous typography. Consumers should delete their @source line, which is now self-registered. Typography and font tokens moved to overridable --theme-* custom properties, and focus rings moved from the undefined solar-500 to --role-focus.
+
+### Features
+
+* add file upload component ([383b93f](https://github.com/wharfkit/svelte-components/commit/383b93f77651905f1014c9ec925aff9f0b946cca))
+* add skeleton loader ([58ade5a](https://github.com/wharfkit/svelte-components/commit/58ade5a4f134d3988e64de4f0b37adcbc8f2bb45))
+* add warning colors ([18f0f3d](https://github.com/wharfkit/svelte-components/commit/18f0f3d28fd42b91717859016bdf362915867b67))
+* allow manual description list titles ([2dad87c](https://github.com/wharfkit/svelte-components/commit/2dad87c15ce470bfdc7f85bec9bdef4b1c20ecdb))
+* export errors from name input ([d287cdf](https://github.com/wharfkit/svelte-components/commit/d287cdf944b4e9a386ca8e8a9a989ff411a30d49))
+* expose `cn` function for merging classnames ([82756f2](https://github.com/wharfkit/svelte-components/commit/82756f2ea3ba2d0c4211ed6c246a56df2fa796df))
+* extract as @wharfkit/svelte-components ([5c5d4e0](https://github.com/wharfkit/svelte-components/commit/5c5d4e0bc7ee1629dfdb7c00a6c1730b74152372))
+* re-expandable code sections ([21b0a33](https://github.com/wharfkit/svelte-components/commit/21b0a33672827f54a92da8b5188881de9186f7eb))
+* style button content layer ([f8567ae](https://github.com/wharfkit/svelte-components/commit/f8567ae3cf974cbbb487334a539b70d12c3bee0a))
+* support controlling tooltip width on iconbutton labels ([1e4f0c4](https://github.com/wharfkit/svelte-components/commit/1e4f0c4b38f989e10d3441260d86d3b1835f551b))
+* **theme:** add warning and destructive color theme ([#8](https://github.com/wharfkit/svelte-components/issues/8)) ([6ad1df1](https://github.com/wharfkit/svelte-components/commit/6ad1df107e6e47f58b8890a7ca2b24a4b656833b))
+* use variable fonts ([a4871eb](https://github.com/wharfkit/svelte-components/commit/a4871eb924f57ee53bb9324d24676cee8083a256))
+
+
+### Bug Fixes
+
+* add cursor pointer to select trigger ([1f146e9](https://github.com/wharfkit/svelte-components/commit/1f146e9327bb8895e8c275202ab96993f4f1b5c1))
+* add generic type to extended select option ([b46f055](https://github.com/wharfkit/svelte-components/commit/b46f055dc6f5d65905817d0d4b29b585cef6ef07))
+* adjust the style of the destructive button ([#10](https://github.com/wharfkit/svelte-components/issues/10)) ([9924c74](https://github.com/wharfkit/svelte-components/commit/9924c74586f15a9b07fc3c66f04e0aaa91b19524))
+* breaking text on select label ([e0d102d](https://github.com/wharfkit/svelte-components/commit/e0d102d71251dec3a1bbb9e41176b44a72b5ad02))
+* collision of type name ([8b548c5](https://github.com/wharfkit/svelte-components/commit/8b548c5bc915a5da769047f66431ec070349410e))
+* component name ([ee94977](https://github.com/wharfkit/svelte-components/commit/ee949779877852fc850de01d137cb2744398aff6))
+* correctly extend fileupload prop types ([c98d4f4](https://github.com/wharfkit/svelte-components/commit/c98d4f46ae3d977af9c48d4ba9d365dd9736b1f3))
+* css export path ([8571e5d](https://github.com/wharfkit/svelte-components/commit/8571e5d7f577223440b560ce6bb5157f67f6a750))
+* dark mode toggle requiring two clicks and inverting ([a07653a](https://github.com/wharfkit/svelte-components/commit/a07653aad2194a13f6694ed39201369c17a0f4cd))
+* disable contextual alternates in default sans-serif font (Inter) ([dd0c300](https://github.com/wharfkit/svelte-components/commit/dd0c300f2c82db261d2efd164c31b5fc3b1b8efd))
+* enable dynamic disabled state for Checkbox ([#11](https://github.com/wharfkit/svelte-components/issues/11)) ([b4904d2](https://github.com/wharfkit/svelte-components/commit/b4904d25099b7729c69b4e401598f233c1687376))
+* export all components ([911c0e3](https://github.com/wharfkit/svelte-components/commit/911c0e3f2acad2e94c3ce0760ab8ddf87f66b427))
+* export default html attributes from description list elements ([04c45aa](https://github.com/wharfkit/svelte-components/commit/04c45aa0a3d4e0d497ffdeadc41a61c78fcd8997))
+* extend defaults to include custom font sizes ([f1ba908](https://github.com/wharfkit/svelte-components/commit/f1ba9088fd7bb57c4c5165bc5d1aab432610c396))
+* extend defaults to include custom font sizes ([4f7a911](https://github.com/wharfkit/svelte-components/commit/4f7a911e8bac57f37444943ab3520cea4a9d64dd))
+* font loading ([979bc35](https://github.com/wharfkit/svelte-components/commit/979bc355de41657a54d389dd201c2913def495e0))
+* move required dependencies from devDependencies ([56fe5a2](https://github.com/wharfkit/svelte-components/commit/56fe5a23d50ada41607e43b2d3938d393566295e))
+* order of validation errors ([cebc87e](https://github.com/wharfkit/svelte-components/commit/cebc87ec41a6e76a4f7dca77b3dca556db01f0e6))
+* remove size-fit from medium+ breakpoints causing button size to change depending on state ([81bce81](https://github.com/wharfkit/svelte-components/commit/81bce81eec247418a9cefa5ca36a7a45f9287c35))
+
 ## [0.6.1](https://github.com/greymass/unicove-components/compare/v0.6.0...v0.6.1) (2025-11-03)
 
 
