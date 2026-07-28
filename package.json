@@ -1,6 +1,6 @@
 {
 	"name": "@wharfkit/svelte-components",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"description": "Svelte 5 and Tailwind v4 component library for Antelope applications",
 	"license": "BSD-3-Clause",
 	"repository": {
