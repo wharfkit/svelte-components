@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moved to wharfkit.github.io/js/svelte-components/</title>
+<link rel="canonical" href="https://wharfkit.github.io/js/svelte-components/">
+<noscript><meta http-equiv="refresh" content="0; url=https://wharfkit.github.io/js/svelte-components/"></noscript>
+<script>
+(function () {
+    var root = '/js/svelte-components/'
+    var rest = location.pathname.replace(/^\/svelte-components\/?/, '')
+    var target = root + rest
+    function go(url) { location.replace(url + location.search + location.hash) }
+    if (!rest || rest === 'index.html') return go(root)
+    fetch(target, {method: 'HEAD'})
+        .then(function (r) { go(r.ok ? target : root) })
+        .catch(function () { go(root) })
+})()
+</script>
+</head>
+<body>
+<p>This documentation moved to <a href="https://wharfkit.github.io/js/svelte-components/">wharfkit.github.io/js/svelte-components/</a>.</p>
+</body>
+</html>
