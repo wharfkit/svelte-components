@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This package lives in the WharfKit monorepo at [wharfkit/js/packages/svelte-components](https://github.com/wharfkit/js/tree/dev/packages/svelte-components), and this repository is archived. Open new issues and pull requests on [wharfkit/js](https://github.com/wharfkit/js).
+
 # @wharfkit/svelte-components
 
 Svelte 5 and Tailwind v4 component library for Antelope applications.
